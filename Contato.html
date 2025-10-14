@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Rei dos Tubos</title>
+    <link rel="stylesheet" href="styles.css"> 
+<body>
+
+    <header>
+        <div class="container-principal header-content">
+            <div class="logo">
+                <img src="img/rei-dos-tubos.png" alt="Rei dos Tubos">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="Produto.html">Produtos</a></li>
+                    <li><a href="Sobre.html">Sobre</a></li>
+                    <li><a href="Contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-banner contact-banner">
+        <div class="container-principal banner-content-contato">
+            <h1>Entre em</h1>
+            <h2>Contato</h2>
+            <div class="contact-image-placeholder">
+                </div>
+        </div>
+    </div>
+    
+    <main class="contact-main">
+        <div class="container-principal">
+            <div class="contact-form-container">
+                <h3>Entre em Contato</h3>
+                <form action="#" method="POST" class="contact-form">
+                    
+                    <div class="input-group-row">
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="input-group-row">
+                        <input type="tel" id="telefone" name="telefone" placeholder="Telefone">
+                        <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>
+                    </div>
+
+                    <div class="input-group-full">
+                        <textarea id="mensagem" name="mensagem" placeholder="Mensagem" rows="5" required></textarea>
+                    </div>
+
+                    <div class="input-group-full">
+                        <button type="submit" class="send-button">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-principal">
+            <p>&copy; 2025 Rei dos Tubos — Todos os direitos reservados</p>
+            <p>Contato: (61) 99999-9999</p>
+        </div>
+    </footer>
+</body>
+</html>
