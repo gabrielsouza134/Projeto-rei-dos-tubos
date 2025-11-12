@@ -1,101 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Rei dos Tubos</title>
-    <link rel="stylesheet" href="styles.css"> 
+  <!-- Charset UTF-8 para acentos; viewport garante layout responsivo no mobile -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título exibido na aba do navegador -->
+  <title>Home - Rei dos Tubos</title>
+
+  <!-- CSS global do projeto -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Se utilizar ícones Font Awesome, inclua o CSS abaixo (opcional) -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /> -->
 </head>
 <body>
 
-    <header>
-        <div class="container-principal header-content">
-            <div class="logo">
-                <img src="img/rei-dos-tubos.png" alt="Rei dos Tubos">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="Produto.html">Produtos</a></li>
-                    <li><a href="Sobre.html">Sobre</a></li>
-                    <li><a href="Contato.html">Contato</a></li>
-                </ul>
-            </nav>
+  <!-- HEADER: logotipo + navegação principal do site -->
+  <header>
+    <!-- container-principal centraliza e limita a largura; header-content alinha itens -->
+    <div class="container-principal header-content">
+      <!-- Logotipo com alt descritivo para acessibilidade -->
+      <div class="logo">
+        <img src="img/rei-dos-tubos.png" alt="Rei dos Tubos" />
+      </div>
+
+      <!-- Navegação principal; aria-label ajuda leitores de tela -->
+      <nav aria-label="Navegação principal">
+        <ul>
+          <!-- Classe .active indica a página atual e aria-current reforça acessibilidade -->
+          <li><a href="index.html" class="active" aria-current="page"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+          <li><a href="Produto.html">Produtos</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN: conteúdo principal da Home -->
+  <main>
+    <!-- HERO: bloco de destaque com headline, subtítulo e CTA -->
+    <section class="hero-home">
+      <div class="container-principal">
+        <!-- hero-banner agrupa o conteúdo; hero-text-overlay permite sobreposições se houver imagem de fundo -->
+        <div class="hero-banner">
+          <div class="hero-text-overlay">
+            <!-- Use apenas um H1 por página para SEO e acessibilidade -->
+            <h1>QUALIDADE E SOLUÇÕES AVANÇADAS PARA VOCÊ E SUA OBRA</h1>
+            <!-- Subtítulo com classe própria para estilização -->
+            <p class="hero-subtitle">Tecnologia e Excelência: Seu Projeto Elevado com o Rei dos Tubos.</p>
+            <!-- Destaque secundário (ex.: cor diferente) -->
+            <p class="hero-highlight">O melhor em Elétrica e Hidráulica Para você !</p>
+            <!-- CTA: direcione para a página de produtos -->
+            <a href="Produto.html" class="cta-button">Ver produtos</a>
+          </div>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <section class="hero-home">
-            <div class="container-principal">
-                <div class="hero-banner">
-                    <div class="hero-text-overlay">
-                        <h1>QUALIDADE E SOLUÇÕES AVANÇADAS PARA VOCÊ E SUA OBRA</h1>
-                        <p class="hero-subtitle">Tecnologia e Excelência: Seu Projeto Elevado com o Rei dos Tubos.</p>
-                        <p class="hero-highlight">O melhor em Elétrica e Hidráulica Para você !</p>
-                        <a href="#" class="cta-button">Ver produtos</a>
-                    </div>
-                </div>
+    <!-- DESTAQUES: vitrine rápida de produtos relevantes -->
+    <section class="products-spotlight-section">
+      <div class="container-principal">
+        <!-- H2 delimita a seção principal da Home depois do H1 -->
+        <h2>Produtos em Destaque</h2>
+
+        <!-- Grid responsivo dos cards de destaque; estilos no CSS controlam colunas por breakpoint -->
+        <div class="spotlight-grid">
+          <!-- CARD 1 -->
+          <div class="spotlight-card">
+            <div class="product-image-area">
+              <!-- Imagem do produto com alt descritivo -->
+              <img src="img/Chuveiro.png" alt="Chuveiro Eletrônico" />
+              <!-- Sobreposição de preço; pode ser posicionado com CSS -->
+              <div class="price-overlay">
+                <span class="old-price">R$299,99</span>
+                <span class="new-price">R$199,90</span>
+              </div>
             </div>
-        </section>
+            <!-- Botão de contato; substitua por <a href="https://wa.me/55..."> se quiser linkar direto ao WhatsApp -->
+            <button class="btn-whatsapp" type="button">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i> Fale com nosso vendedor
+            </button>
+          </div>
 
-        <section class="products-spotlight-section">
-            <div class="container-principal">
-                <h2>Produtos em Destaque</h2>
-
-                <div class="spotlight-grid">
-                    <div class="spotlight-card">
-                        <div class="product-image-area">
-                            <img src="img/Chuveiro.png" alt="Chuveiro Eletrônico">
-                            <div class="price-overlay">
-                                <span class="old-price">R$299,99</span>
-                                <span class="new-price">R$199,90</span>
-                            </div>
-                        </div>
-                        <button class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Fale com nosso vendedor</button>
-                    </div>
-
-                    <div class="spotlight-card">
-                        <div class="product-image-area">
-                            <img src="img/Disjuntor.png" alt="Disjuntor Siemens">
-                            <div class="price-overlay">
-                                <span class="old-price">R$449,99</span>
-                                <span class="new-price">R$279,90</span>
-                            </div>
-                        </div>
-                        <button class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Fale com nosso vendedor</button>
-                    </div>
-
-                    <div class="spotlight-card">
-                        <div class="product-image-area">
-                            <img src="img/Interuptor.png" alt="Interruptor Simples">
-                            <div class="price-overlay">
-                                <span class="old-price">R$78,99</span>
-                                <span class="new-price">R$53,90</span>
-                            </div>
-                        </div>
-                        <button class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Fale com nosso vendedor</button>
-                    </div>
-
-                    <div class="spotlight-card">
-                        <div class="product-image-area">
-                            <img src="img/tomada.png" alt="Tomada Dupla">
-                            <div class="price-overlay">
-                                <span class="old-price">R$69,99</span>
-                                <span class="new-price">R$49,90</span>
-                            </div>
-                        </div>
-                        <button class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Fale com nosso vendedor</button>
-                    </div>
-                </div>
+          <!-- CARD 2 -->
+          <div class="spotlight-card">
+            <div class="product-image-area">
+              <img src="img/Disjuntor.png" alt="Disjuntor Siemens" />
+              <div class="price-overlay">
+                <span class="old-price">R$449,99</span>
+                <span class="new-price">R$279,90</span>
+              </div>
             </div>
-        </section>
-    </main>
+            <button class="btn-whatsapp" type="button">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i> Fale com nosso vendedor
+            </button>
+          </div>
 
-    <footer>
-        <div class="container-principal">
-            <p>&copy; 2025 Rei dos Tubos — Todos os direitos reservados</p>
-            <p>Contato: (61) 99999-9999</p>
+          <!-- CARD 3 -->
+          <div class="spotlight-card">
+            <div class="product-image-area">
+              <img src="img/Interuptor.png" alt="Interruptor Simples" />
+              <div class="price-overlay">
+                <span class="old-price">R$78,99</span>
+                <span class="new-price">R$53,90</span>
+              </div>
+            </div>
+            <button class="btn-whatsapp" type="button">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i> Fale com nosso vendedor
+            </button>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="spotlight-card">
+            <div class="product-image-area">
+              <img src="img/tomada.png" alt="Tomada Dupla" />
+              <div class="price-overlay">
+                <span class="old-price">R$69,99</span>
+                <span class="new-price">R$49,90</span>
+              </div>
+            </div>
+            <button class="btn-whatsapp" type="button">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i> Fale com nosso vendedor
+            </button>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
+      <section class="mapa">
+    <h2>Onde Estamos</h2>
+    <div class="mapa-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.017894153931!2d-48.14018!3d-15.8314349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bcd51c98cba99%3A0x7faf1bf6c39f9771!2sRei%20Dos%20Tubos%20Hidr%C3%A1ulica%20e%20El%C3%A9trica!5e0!3m2!1spt-BR!2sbr!4v1731429000000!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+  </main>
+  <a class="whatsapp-btn" href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank">WhatsApp</a>
+
+  <!-- FOOTER: informações institucionais e contato -->
+  <footer>
+    <div class="container-principal">
+      <p>&copy; 2025 Rei dos Tubos — Todos os direitos reservados</p>
+      <p>Contato: (61) 99999-9999</p>
+    </div>
+  </footer>
+  
+
+  <!-- Notas:
+       - Para melhor performance, otimize as imagens (formato, tamanho e compressão).
+       - Se adicionar scripts, coloque antes de </body> para não bloquear o carregamento.
+       - Mantenha a hierarquia de headings (H1 → H2 → H3) consistente entre páginas.
+  -->
 </body>
 </html>
