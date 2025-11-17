@@ -1,147 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Charset UTF-8 (suporte a acentos) e viewport para layout responsivo -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Título da página (aparece na aba do navegador) -->
+  <meta name="description" content="A Rei dos Tubos oferece tubos, conexões e materiais hidráulicos de alta qualidade para construção, reforma e manutenção. Trabalhamos com PVC, aço, cobre e acessórios completos, garantindo atendimento rápido, variedade de produtos e preços acessíveis">
+  <meta name="keywords" content="tubos, conexões, hidráulica, loja de tubos, materiais para construção, tubos pvc, tubos aço, conexões pvc, conexões metálicas, acessórios hidráulicos, reforma, construção civil, comércio de tubos, rei dos tubos
+">
+  <meta name="gabriel de souza e gabriel isidorio" content="gabriel de souza e gabriel isidorio">
   <title>Contato - Rei dos Tubos</title>
 
-  <!-- CSS global do projeto -->
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Se for usar ícones Font Awesome via CDN, inclua o link abaixo (opcional) -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /> -->
+  <!-- CSS global -->
+   <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="style.min.css" />
+  <!-- Ícones (opcional)
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  -->
 </head>
 <body>
 
-  <!-- HEADER: logotipo e navegação principal -->
+  <!-- HEADER -->
   <header>
-    <!-- container-principal centraliza e limita a largura; header-content alinha itens -->
     <div class="container-principal header-content">
-      <!-- Logotipo com alt descritivo para acessibilidade -->
+
       <div class="logo">
         <img src="img/rei-dos-tubos.png" alt="Rei dos Tubos" />
       </div>
 
-      <!-- Navegação principal; aria-label auxilia leitores de tela -->
       <nav aria-label="Navegação principal">
         <ul>
-          <li><a href="index.html"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="Produto.html">Produtos</a></li>
           <li><a href="Sobre.html">Sobre</a></li>
-          <!-- Página atual destacada com .active e aria-current -->
           <li><a href="Contato.html" class="active" aria-current="page">Contato</a></li>
         </ul>
       </nav>
+
     </div>
   </header>
 
-  <!-- BANNER DA PÁGINA: reforça contexto; usa mesma base visual dos outros banners -->
+  <!-- BANNER -->
   <div class="page-banner contact-banner">
     <div class="container-principal banner-content-contato">
-      <!-- Mantenha hierarquia de headings consistente (H1 > H2) -->
       <h1>Entre em</h1>
       <h2>Contato</h2>
-
-      <!-- Espaço reservado para futura imagem/ilustração do contato -->
-      <div class="contact-image-placeholder"><!-- opcional --></div>
+      <div class="contact-image-placeholder"></div>
     </div>
   </div>
 
-  <!-- MAIN: área principal da página -->
+  <!-- MAIN -->
   <main class="contact-main">
     <div class="container-principal">
-      <!-- Cartão/box do formulário com contraste adequado -->
+
       <div class="contact-form-container">
         <h3>Entre em Contato</h3>
 
-        <!-- Formulário de contato; method/ action podem ser integrados ao backend -->
-        <!-- role="form" e autocomplete melhoram usabilidade -->
         <form action="#" method="POST" class="contact-form" role="form" autocomplete="on">
-          
-          <!-- Linha com dois campos lado a lado no desktop (stack no mobile via CSS) -->
+
           <div class="input-group-row">
-            <!-- label "visualmente oculto" pode ser adicionado para acessibilidade total -->
-            <input
-              type="text"
-              id="nome"
-              name="nome"
-              placeholder="Nome"
+            <input 
+              type="text" 
+              id="nome" 
+              name="nome" 
+              placeholder="Nome" 
               required
-              aria-required="true"
-              inputmode="text"
               autocomplete="name"
             />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
+
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="Email" 
               required
-              aria-required="true"
-              inputmode="email"
               autocomplete="email"
             />
           </div>
 
-          <!-- Segunda linha de campos -->
           <div class="input-group-row">
-            <input
-              type="tel"
-              id="telefone"
-              name="telefone"
-              placeholder="Telefone"
-              inputmode="tel"
+            <input 
+              type="tel" 
+              id="telefone" 
+              name="telefone" 
+              placeholder="Telefone" 
               autocomplete="tel"
             />
-            <input
-              type="text"
-              id="assunto"
-              name="assunto"
-              placeholder="Assunto"
+
+            <input 
+              type="text" 
+              id="assunto" 
+              name="assunto" 
+              placeholder="Assunto" 
               required
-              aria-required="true"
-              inputmode="text"
             />
           </div>
 
-          <!-- Campo de mensagem ocupa a largura total -->
           <div class="input-group-full">
-            <textarea
-              id="mensagem"
-              name="mensagem"
-              placeholder="Mensagem"
-              rows="5"
+            <textarea 
+              id="mensagem" 
+              name="mensagem" 
+              placeholder="Mensagem" 
+              rows="5" 
               required
-              aria-required="true"
             ></textarea>
           </div>
 
-          <!-- Botão de envio em largura total; considere feedback visual com JS -->
           <div class="input-group-full">
             <button type="submit" class="send-button">Enviar</button>
           </div>
+
         </form>
       </div>
+
     </div>
   </main>
-  <a class="whatsapp-btn" href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank">WhatsApp</a>
 
-  <!-- FOOTER: informações institucionais e contato -->
+  <!-- BOTÃO WHATSAPP -->
+  <a class="whatsapp-btn" href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank">
+    WhatsApp
+  </a>
+
+  <!-- FOOTER -->
   <footer>
     <div class="container-principal">
       <p>&copy; 2025 Rei dos Tubos — Todos os direitos reservados</p>
-      <!-- Telefone de contato institucional -->
       <p>Contato: (61) 99999-9999</p>
     </div>
   </footer>
 
-  <!-- Sugestões:
-       - Validação: adicione validação de campos com HTML5 (pattern) e JS para feedback amigável.
-       - Integração: defina action para um endpoint (ex.: Formspree, backend próprio) e trate o POST.
-       - Acessibilidade extra: associe <label for="..."> para cada campo se quiser máxima compatibilidade.
-       - Analytics: dispare evento de envio bem-sucedido para medir conversões.
-  -->
 </body>
 </html>
